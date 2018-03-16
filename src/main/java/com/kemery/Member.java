@@ -59,7 +59,7 @@ import org.hibernate.annotations.CascadeType;
 		 private long passwordatt;
 		 
 		 @OneToMany(fetch=FetchType.EAGER)
-		 @JoinColumn(name="memeid")
+		 @JoinColumn(name="memid")
 		 @Cascade(CascadeType.ALL)
 		 private List<Purchase> purchases;
 
@@ -70,8 +70,8 @@ import org.hibernate.annotations.CascadeType;
 	        this.middlename = "";
 	        this.status = "";
 	        this.memdt = null;
-	        this.ytdtotdt = null;
 	        this.ytdtot = 0;
+	        this.ytdtotdt = null;
 	        this.password = -1;
 	        this.passwordatt = 0;
 	    }
